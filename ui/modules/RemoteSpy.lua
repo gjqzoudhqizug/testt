@@ -101,7 +101,7 @@ local removeContext = ContextMenuButton.new("rbxassetid://4702831188", "Remove L
 local scriptContext = ContextMenuButton.new("rbxassetid://4800244808", "Generate Script")
 local callingScriptContext = ContextMenuButton.new("rbxassetid://4800244808", "Get Calling Script")
 local spyClosureContext = ContextMenuButton.new("rbxassetid://4666593447", "Spy Calling Function")
-local repeatCallContext = ContextMenuButton.new("rbxassetid://4907151581", "Repeat Call")
+local repeatCallContext = ContextMenuButton.new("rbxassetid://4907151581", "Repeat sexy Call")
 local viewAsHexContext = ContextMenuButton.new("rbxassetid://9058292613", "Toggle String Hex View")
 
 local removeConditionContext = ContextMenuButton.new("rbxassetid://4702831188", "Remove Condition")
@@ -908,6 +908,7 @@ end)
 
 repeatCallContext:SetCallback(function()
     local remoteInstance = selected.remoteLog.Remote.Instance
+    print(remoteInstance)
     local remoteClassName = remoteInstance.ClassName
     local method 
 
